@@ -99,7 +99,7 @@ const Blackjack: React.FC = () => {
 
     const newPlayer = { ...player };
     const shuffledDeck = [...deck];
-    const newCard = dealCard(newPlayer, shuffledDeck);
+     dealCard(newPlayer, shuffledDeck);
 
     if (newPlayer.score > 21) {
       setPlayer(newPlayer);

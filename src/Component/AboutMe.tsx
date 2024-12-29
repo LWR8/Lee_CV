@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../Styles/AboutMe.css';
 import Navbar from './Navbar';
 import img3 from '../assets/cherry.png';
