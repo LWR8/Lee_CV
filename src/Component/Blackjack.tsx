@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../Styles/Blackjack.css";
 import img2 from '../assets/waves.png';
 import img3 from '../assets/cherry.png';

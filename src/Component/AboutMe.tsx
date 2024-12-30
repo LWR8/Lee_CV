@@ -5,7 +5,7 @@ import cvFile from '../assets/Curriculum vitae - Lee McCarthy-Pirie.docx.pdf';
 import img2 from '../assets/waves.png';
 
 function AboutMe(){
-  const [navHeight, setNavHeight] = useState<number>(0);
+  const [, setNavHeight] = useState<number>(0);
 
   useEffect(() => {
     const navbar = document.querySelector('nav');
