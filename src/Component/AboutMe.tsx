@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../Styles/AboutMe.css';
 import img3 from '../assets/cherry.png';
-import cvFile from '../assets/Curriculum vitae - Lee McCarthy-Pirie.docx.pdf'; 
 import img2 from '../assets/waves.png';
 
 function AboutMe(){
@@ -47,9 +46,7 @@ function AboutMe(){
               <li>Git, Docker, CI/CD</li>
               <li>Agile Methodologies</li>
             </ul>
-            <a href={cvFile} download className="download-button">
-              <button className="btn">Download CV</button>
-            </a>
+
           </section>
 
         </div>
@@ -61,6 +58,7 @@ function AboutMe(){
         />
 
       </div>
+
     </div>
   );
 };

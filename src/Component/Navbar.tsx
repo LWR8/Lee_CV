@@ -11,6 +11,7 @@ function Navbar() {
   const navItems: NavItem[] = [
     { label: 'Home', to: '/' },  
     { label: 'About', to: '/about' }, 
+    { label: 'Linkedin', to: 'https://www.linkedin.com/in/lee-mccarthy/' }, 
     { label: 'Feeling lucky?', to: '/game' }, 
   ];
 
@@ -43,7 +44,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '5px 40px',
+    padding: '5px 20px',
     backgroundColor: 'rgba(51, 51, 51, 0.3)',
     color: '#fff',
     zIndex: 1000,

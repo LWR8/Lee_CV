@@ -1,13 +1,11 @@
 /* Container styles */
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
 
-  align-items: center;
-  text-align: center;
 
   background: linear-gradient(45deg, #1269cc, rgb(93, 93, 93));
   overflow: hidden;
@@ -81,21 +79,8 @@
 }
 
 
-footer {
-  margin-top: 30px;
-  font-size: 1rem;
-  color: #ddd;
-}
 
-footer a {
-  color: #42a5f5;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-footer a:hover {
-  color: #1e88e5;
-}
 .Waves {
   position: absolute; 
   bottom: 0;          
