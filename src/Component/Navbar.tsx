@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
+import img1 from '../assets/ff7.png';
 
 interface NavItem {
   label: string;
@@ -16,7 +17,7 @@ function Navbar() {
   return (
     <nav style={styles.navbar}>
       <img 
-        src="https://seeklogo.com/images/F/final-fantasy-vii-logo-541FC317FF-seeklogo.com.png" 
+        src={img1} 
         alt="My Website Logo" 
         style={styles.logo} 
       />
@@ -42,7 +43,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 40px',
+    padding: '5px 40px',
     backgroundColor: 'rgba(51, 51, 51, 0.3)',
     color: '#fff',
     zIndex: 1000,

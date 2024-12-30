@@ -88,6 +88,16 @@ button:hover {
   margin-top: 20px;
 }
 
+.HeaderImg 
+{
+  position: absolute; 
+  top: 0;          
+  left: 0;            
+  width: 40%;       
+  height: 40%;       
+  z-index: -0.01;    
+}
+
 /* Glitch text animation */
 @keyframes glitch {
   0% {
@@ -122,4 +132,36 @@ button:hover {
     width: 100%;
     font-size: 1.2rem;
   }
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .profilePicture {
+      width: 200px; 
+      height: 200px;
+      top: 5%;
+      visibility: hidden;
+  }
+
+  .header {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+  }
+
+  .subtitle {
+      font-size: 1rem;
+      margin-bottom: 25px;
+  }
+  .Waves {
+      visibility: hidden; 
+  }
+  .HeaderImg 
+  {
+      visibility: hidden; 
+  }
+  
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Blackjack.css";
-
+import img2 from '../assets/waves.png';
+import img3 from '../assets/cherry.png';
 // Types for card and player
 type Card = {
   rank: string;
@@ -33,7 +34,9 @@ const cardValues: { [key: string]: number } = {
   "A": 11,
 };
 
-const Blackjack: React.FC = () => {
+function Blackjack()  {
+
+
   const [deck, setDeck] = useState<Card[]>([]);
   const [player, setPlayer] = useState<Player>({ name: "Player", hand: [], score: 0 });
   const [dealer, setDealer] = useState<Player>({ name: "Dealer", hand: [], score: 0 });
@@ -151,7 +154,10 @@ const Blackjack: React.FC = () => {
   };
 
   return (
+
+    
     <div className="blackjack-container">
+        <img src={img3} alt="Left Decoration" className="HeaderImg" />
       <h1>Blackjack Game</h1>
 
       {/* Start New Game Button */}
@@ -193,7 +199,15 @@ const Blackjack: React.FC = () => {
       </div>
 
       <p>{message}</p>
+
+      <img 
+          src={img2} 
+          alt="Waves"
+          className="Waves"
+        />
     </div>
+
+
   );
 };
 

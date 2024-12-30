@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../Styles/AboutMe.css';
-import Navbar from './Navbar';
 import img3 from '../assets/cherry.png';
-import cvFile from '../assets/Curriculum vitae - Lee McCarthy-Pirie.docx.pdf'; // Path to your CV file
+import cvFile from '../assets/Curriculum vitae - Lee McCarthy-Pirie.docx.pdf'; 
+import img2 from '../assets/waves.png';
 
 function AboutMe(){
   const [navHeight, setNavHeight] = useState<number>(0);
@@ -15,13 +15,11 @@ function AboutMe(){
   }, []);
 
   return (
-    <div className="container" style={{ paddingTop: navHeight }}>
-      <Navbar />
+    <div className="container">
       <div className="about-wrapper">
-        {/* Left Image */}
-        <img src={img3} alt="Left Decoration" className="side-image left-image" />
 
-        {/* Main Content */}
+        <img src={img3} alt="Left Decoration" className="HeaderImg" />
+
         <div className="about-content">
           <header>
             <h1 className="header">About Me</h1>
@@ -33,7 +31,7 @@ function AboutMe(){
               Hi, I’m Lee, a dedicated software developer with expertise in creating dynamic,
               user-friendly applications. My passion lies in crafting clean code and delivering
               efficient, scalable solutions. I specialize in full-stack development, with proficiency
-              in technologies like C#, Node.js, AWS, SQL, Integration testing, Unit testing, angular cli.
+              in technologies like C#, Node.js, AWS, SQL, Integration testing, Unit testing, Angular CLI.
             </p>
             <p>
               Over the years, I’ve worked on diverse projects. My goal is to continuously learn and grow,
@@ -49,22 +47,19 @@ function AboutMe(){
               <li>Git, Docker, CI/CD</li>
               <li>Agile Methodologies</li>
             </ul>
-            <p>
-        Click the button below to download my CV and learn more about my experience and skills.
-      </p>
             <a href={cvFile} download className="download-button">
-        <button className="btn">Download CV</button>
-      </a>
+              <button className="btn">Download CV</button>
+            </a>
           </section>
 
-
-          <footer>
-            <p>Feel free to <a href="https://www.linkedin.com/in/lee-mccarthy/">get in touch</a> if you'd like to collaborate!</p>
-          </footer>
         </div>
 
-        {/* Right Image */}
-        <img src={img3} alt="Right Decoration" className="side-image right-image" />
+        <img 
+          src={img2} 
+          alt="Waves"
+          className="Waves"
+        />
+
       </div>
     </div>
   );
